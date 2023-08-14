@@ -32,7 +32,9 @@ void reverseArray(int arr[], int size) {
     arrCopia[i] = arr[j];
   }
     
-    *arr = *arrCopia;
+  for(int i = 0; i < size; i++){
+    arr[i] = arrCopia[i];
+  }
   
 }
 
