@@ -46,33 +46,21 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
 
-  int *arrPares = NULL; // Inicializar el puntero a NULL
-  int countPares = 0;   // Contador para números pares encontrados
-  
-  for (int i = 0; i < size; i++) {
-    if (arr[i] % 2 == 0) {
-      countPares++;
-    }
-  }
-  
-  arrPares = (int *)malloc(sizeof(int) * countPares); // Reservar espacio para números pares
+  int *arrPares = (int *)malloc(sizeof(int));
   
   if (arrPares == NULL) {
-    *newSize = 0; // No se pudo reservar memoria, nuevo tamaño es 0
+    *newSize = 0;
     return NULL;
   }
   
-  int index = 0; // Índice para el arreglo de números pares
+  *newSize = 0;
   
   for (int i = 0; i < size; i++) {
     if (arr[i] % 2 == 0) {
-      arrPares[index++] = arr[i];
+      arrPares = (int *)realloc(arrPares, sizeof(int) * (*newSize + 1));
+      arrPares[*newSize++] = arr[i];
     }
   }
-  
-  *newSize = countPares; // Establecer el nuevo tamaño
-
-  arrPares = (int *)realloc(arrPares, sizeof(int) * countPares);
   
   return arrPares;
 }
