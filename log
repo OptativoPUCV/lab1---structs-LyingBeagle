@@ -29,3 +29,9 @@ exercises.c:33:5: error: implicit declaration of function ‘print’; did you m
 cc1: all warnings being treated as errors
 Compilation failed
 6b2f601
+Mon 14 Aug 2023 02:55:00 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|6
+total_score: 10/70
+301fa28
