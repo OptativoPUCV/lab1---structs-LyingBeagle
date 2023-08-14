@@ -52,3 +52,9 @@ Mon 14 Aug 2023 03:02:46 AM UTC:
  1 file changed, 8 insertions(+), 2 deletions(-)
  tests:  0|0
 5df60b2
+Mon 14 Aug 2023 03:08:01 AM UTC: 
+ exercises.c | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+ tests:  0|5
+total_score: 20/70
+340e78d
