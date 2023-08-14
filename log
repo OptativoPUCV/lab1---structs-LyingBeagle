@@ -17,3 +17,15 @@ Mon 14 Aug 2023 02:53:53 AM UTC:
  tests:  0|6
 total_score: 10/70
 48faed6
+Mon 14 Aug 2023 02:54:42 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:33:5: error: implicit declaration of function ‘print’; did you mean ‘printf’? [-Werror=implicit-function-declaration]
+   33 |     print("a");
+      |     ^~~~~
+      |     printf
+cc1: all warnings being treated as errors
+Compilation failed
+6b2f601

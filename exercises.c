@@ -30,8 +30,9 @@ void reverseArray(int arr[], int size) {
 
   for(int i = 0, j = size - 1; i < size; i++, j--){
     arrCopia[i] = arr[j];
+    print("a");
   }
-
+    
     arr = arrCopia;
   
 }
